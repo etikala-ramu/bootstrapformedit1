@@ -1,0 +1,338 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+    body{
+            background-image:url(dhoni.jpg);
+            background-size: cover;
+            background-attachment:fixed;
+		}
+	    .radiocontainer input[type="radio"]{
+         position:absolute;
+}
+       .radiocontainer input[type="radio"] + label{
+           position:relative;
+		   padding:3px 0 0 40px;	
+		   cursor:pointer;
+}
+    .radiocontainer input[type="radio"] + label:before{
+         content:"";
+         background:#fff;
+         border: 2px solid #1cbe9d;
+         height:25px;
+         width:25px;
+         border-radius:50%;
+         position:absolute;
+         top: 0;
+         left: 0;
+}
+    .radiocontainer input[type="radio"] + label:after{
+         content:"";
+         background:#1cbe9d;
+         border: 2px solid #1cbe9d;
+         height:15px;
+         width:15px;
+         border-radius:50%;
+         position:absolute;
+         top: 5px;
+         left: 5px;
+		 opacity: 0;
+		 transform:scale(2);
+		 transition:transform 0.3s linear,opacity 0.3s linear;
+}	
+      .radiocontainer input[type="radio"]:checked + label:after{
+       opacity:1;
+	   transform:scale(1);	
+}	  
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+</style>
+ 
+</head>
+<body>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="info.png" alt="info" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="cup.jpg" alt="cup" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="india.jpg" alt="india" width="1100" height="500">
+    </div>
+  </div>
+  
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<div class="container">
+<div class="jumbotron text-center">
+  <h1>Icc Cricket World Cup Info</h1>
+</div>
+
+  <div class="card-group">
+    <div class="card bg-dark">
+       
+      <div class="card-body text-white">
+
+      <h1>Match-1</h1>
+
+        <p class="card-text">First WorldCup Match Is Gonna be with <strong>England vs South Africa</strong></p>
+        <a style="margin-top:10px;" href="#" class="btn btn-primary">ClickHere</a>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-dark">
+      <h2>Match-2</h2>
+        <p class="card-text">Second WorldCup Match Is Gonna be with <strong>WestIndies vs Pakistan</strong></p>
+        <a style="margin-top:10px;" href="#" class="btn btn-primary">ClickHere</a>      
+      </div>
+    </div>
+    <div class="card bg-info">
+      <div class="card-body text-white">
+      <h3>Match-3</h3>
+        <p class="card-text">Third WorldCup Match Is Gonna be with <strong>NewZealand vs SriLanka</strong></p>
+        <a style="margin-top:10px;" href="#" class="btn btn-primary">ClickHere</a>      
+      </div>
+    </div>
+
+    <div class="card bg-success">
+      <div class="card-body text-white">
+      <h4>Match-4</h4>
+        <p class="card-text">Fourth WorldCup Match Is Gonna be with <strong>Afghanisthan vs Australia</strong></p>
+        <a style="margin-top:10px;" href="#" class="btn btn-primary">ClickHere</a>
+      </div>
+    </div>  
+  </div>
+</div>
+<br>
+<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%"></div>
+          <div class="container bg-dark text-white">
+		<h1>Basic Form</h1>
+		<div class=row>
+			<div class='col-md-4'></div>
+			<div class='col-md-6'>
+				<form>
+					<div class='row' class="form-group">
+						<div class='col-md-3'>FirstName</div>
+						<div class='col-md-7'>
+							<input type="text" class="form-control" name="fname" />
+						</div>
+					</div>
+<br>
+					<div class='row' class="form-group">
+						<div class='col-md-3'>Last Name</div>
+						<div class='col-md-7'>
+							<input type="text" class="form-control" name="lname" />
+						</div>
+					</div>
+<br>
+					<div class='row' class="form-group">
+						<div class='col-md-3'>Password</div>
+						<div class='col-md-7'>
+							<input type="Password" class="form-control" name="pass" />
+						</div>
+					</div>
+<br>
+					<div class='row' class="form-group">
+						<div class='col-md-3'>Email</div>
+						<div class='col-md-7'>
+							<input type="mail" class="form-control" name="mail" />
+						</div>
+					</div>
+<br>
+					<div class='row' class="form-group">
+						<div class='col-md-3'>MartialStatus</div>
+						<div class='col-md-7'>
+							<input type="radio" name="MartialStatus">Married
+                                                        <input type="radio" name="MartialStatus">Single
+                                                        <input type="radio" name="MartialStatus">Divorced
+						</div>
+					</div>
+<br>
+					<div class='row' class="form-group">
+						<div class='col-md-3'>PhoneNumber</div>
+						<div class='col-md-7'>
+							<input type="Phone" class="form-control" name="mobile" />
+						</div>
+                                        </div>
+<br>
+					<div class='row' class="form-group">
+						<div class='col-md-3'>Select Country</div>
+						<div class='col-md-7'>
+                                                           <select>
+                                                                    <option>Australia</option>
+                                                                    <option>U.S.A</option>
+                                                                    <option>INDIA</option>
+                                                                    <option>SRILANKA</option>
+                                                                    <option>NEPAL</option>
+
+                                                           </select>
+						</div>
+                                        </div>
+<br>
+                                        <div class='row'>
+						<button type="button" class="btn btn-primary" style="margin:auto;display:block">submit form</button>
+					</div>
+         
+               
+</table>
+</form>
+</div>
+</div>
+</div>
+<br>
+<body>
+	             
+<div class="jumbotron text-center">
+<h1> Icc Cricket World Cup Info </h1>
+</div>
+      <div class="container text-white">
+         <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                   <div class="row">
+                        <div class="col-sm-6">PlayerFirstName</div>
+                               <div class="col-sm-4">
+                                     <input type="text" name="fname">
+                               </div>
+                   </div>
+                   <br>
+                    <div class="row">
+                        <div class="col-sm-6">PlayerLastName</div>
+                               <div class="col-sm-4">
+                                     <input type="text" name="lname">                      
+                               </div>
+                   </div>
+                   <br>
+
+                    <div class="row">
+                        <div class="col-sm-6">Email</div>
+                               <div class="col-sm-4">
+                                     <input type="mail" name="email">                      
+                               </div>
+                   </div>
+                   <br>
+
+                    <div class="row">
+                        <div class="col-sm-6">Mobile Number</div>
+                               <div class="col-sm-4">
+                                     <input type="phone" name="number">                      
+                               </div>
+                   </div>
+                   <br>
+				   
+                    <div class="row ">
+                        <div class="col-sm-6">Gender</div>
+                               <div class="col-sm-4 form-check-inline">
+
+							   <div class="row">
+							        <div class="col-sm-3">
+                                     <input type="radio" name="gender" id="male">
+                                     <label for="male">Male</label>  
+									</div>
+                                  </div>
+								  <br>
+								 <div class="row">
+								    <div class="col-sm-3">
+                                     <input type="radio" name="gender" id="female">
+                                     <label for="female">Female</label>  
+                                    </div>
+								  </div> 
+                               </div>
+                   </div>
+				   
+                   <br>
+					<form class='radiocontainer' action='#'>
+                    <div class="row ">
+                        
+						<div class="col-sm-6">PlayerType</div>
+						<div class="row form-check-inline">
+							<div class="row">
+							        <div class="col-sm-3">
+                                     <input type="radio" name="playertype" id="batsmen">
+                                     <label for="batsmen">Batsmen</label>  
+                                    </div>
+								  </div>           
+                                  <div class="row">
+								    <div class="col-sm-3">
+                                     <input type="radio" name="playertype" id="bowler">
+                                     <label for="bowler">Bowler</label>
+                                    </div>
+								  </div>   
+                                  <div class="row">
+								     <div class="row">
+                                     <input type="radio" name="playertype" id="allrounder">
+                                     <label for="allrounder">Allrounder</label>
+                                    </div>
+								  </div>
+						</div>
+                               
+                   </div>
+				   </form>	
+				   
+                   <br>
+                    <div class="row">
+                        <div class="col-sm-6">PlayerCountry</div>
+                               <div class="col-sm-4">
+                                     <select>
+                                        <option value="india">INDIA</option>
+                                        <option value="australia">AUSTRALIA</option>
+                                        <option value="srilanka">SRILANKA</option>
+                                        <option value="bangladesh">BANGLADESH</option>
+                                        <option value="south africa">SOUTH AFRICA</option>
+                                        <option value="england">ENGLAND</option>
+                                        <option value="afghanisthan">AFGHANISTHAN</option>
+                                        <option value="west indies>WEST INDIES</option>
+                                        <option value="new zealand>NEW ZEALAND</option>
+                                        <option value="pakistan">PAKISTAN</option>
+                                     </select>
+                               </div>
+                   </div>
+                   <br>
+                      <div class="row">
+ <div class="col-md-1">
+                                                        
+                                 </div>
+                                 <div class="text-center col-md-10">
+                                     <button type="button" class="btn btn-primary btn-block" value="submit">Submit</button>                     
+                                 </div>
+ <div class=" col-md-1">
+                                                        
+                                 </div>
+                      </div>
+
+                   <br>
+                 </div>                                                                           
+            </div>
+       </div>
+
+</body>
+</html>
